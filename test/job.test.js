@@ -28,7 +28,7 @@ describe('Testing API Function', () => {
         ];
 
         const response = await request(app)
-            .post('/createJob')
+            .post('/createjob')
             .send(data);
 
         const expected = [

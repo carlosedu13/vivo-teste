@@ -14,9 +14,9 @@
 
 ## Rota GET para verificar resposta da aplicação: /ping
 Não precisa de enviar nada no body
-## Rota POST: /createJob
+## Rota POST: /createjob
 
-### Exemplo de Request para a rota /createJob
+### Exemplo de Request para a rota /createjob
 ```json
 [
     {
@@ -40,7 +40,7 @@ Não precisa de enviar nada no body
 ]
 ```
 
-### Exemplo de Response para a rota /createJob
+### Exemplo de Response para a rota /createjob
 
 ```json
 [
