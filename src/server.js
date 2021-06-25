@@ -14,3 +14,5 @@ const app = express();
 
     app.listen(port, () => console.log(`the server running on url http://${host}:${port}/`));
 })();
+
+module.exports = app;

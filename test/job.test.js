@@ -2,8 +2,6 @@ const request = require('supertest');
 
 const app = require('../src/server');
 
-// janela de execução 2019-11-10 09:00:00 até 2019-11-11 12:00:00
-
 describe('Testing API Function', () => {
     it('should be with correct output', async () => {
         const body = 
@@ -43,6 +41,6 @@ describe('Testing API Function', () => {
         ];
 
         expect(response.status).toBe(200);
-        expect(response.body).toBe(expected);
+        expect(response.body).toStrictEqual(expected);
     })
 })

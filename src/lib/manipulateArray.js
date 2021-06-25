@@ -48,7 +48,6 @@ function manipulateArray(arr) {
         return newAr;
     }, []);
 
-    console.log(newArr);
     return newArr;
 }
 

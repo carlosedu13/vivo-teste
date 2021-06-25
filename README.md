@@ -13,6 +13,7 @@
 ```
 
 ## Rota GET para verificar resposta da aplicação: /ping
+
 Não precisa de enviar nada no body
 ## Rota POST: /createjob
 
@@ -66,3 +67,11 @@ No terminal de um computador que tenha o Docker instalado use o seguinte comando
 ```
 
 Assim irá subir um container que ocupará a porta 3000 TCP para que você faça seus testes
+
+## Testando a aplicação
+
+Para testar a aplicação basta instalar as dependências e digitar no terminal o seguinte comando
+
+```sh
+    yarn test
+```
