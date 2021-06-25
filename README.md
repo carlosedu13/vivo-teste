@@ -17,8 +17,14 @@ Não precisa de enviar nada no body
 ## Rota POST: /createjob
 
 ### Exemplo de Request para a rota /createjob
+
 ```json
-[
+{
+    "executionPeriod": {
+        "start": "2019-11-10 09:00:00",
+        "done": "2019-11-11 12:00:00"
+    },
+    "data": [
     {
         "id": 1,
         "description": "Importação de arquivos de fundos",
@@ -37,7 +43,7 @@ Não precisa de enviar nada no body
         "maximumDate": "2019-11-11 08:00:00",
         "estimatedTime": "6 hours"
     }
-]
+]}
 ```
 
 ### Exemplo de Response para a rota /createjob

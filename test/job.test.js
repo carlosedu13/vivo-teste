@@ -6,7 +6,13 @@ const app = require('../src/server');
 
 describe('Testing API Function', () => {
     it('should be with correct output', async () => {
-        const data = [
+        const body = 
+        {
+            'executionPeriod': {
+                'start': '2019-11-10 09:00:00',
+                'done': '2019-11-11 12:00:00'
+            },
+            'data': [
             {
                 'id': 1,
                 'description': 'Importação de arquivos de fundos',
@@ -25,11 +31,11 @@ describe('Testing API Function', () => {
                 'maximumDate': '2019-11-11 08:00:00',
                 'estimatedTime': '6 hours',
             },
-        ];
+        ]};
 
         const response = await request(app)
             .post('/createjob')
-            .send(data);
+            .send(body);
 
         const expected = [
             [1, 3],

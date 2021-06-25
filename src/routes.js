@@ -7,10 +7,12 @@ router.get('/ping', (request, response) => {
     response.status(200).send({'status': 'every pong here'})
 });
 
-router.post('/createjob', async (request, response) => {
-    
+router.post('/createjob', (request, response) => {
+    const data = manipulateArray(request.body);
 
-    response.status(200).send();
+    cronjob(data, request.body);
+
+    response.status(200).send(data);
 });
 
 module.exports = router;
