@@ -56,3 +56,13 @@ Não precisa de enviar nada no body
 ```
 
 ### Qualquer outra rota retorna um erro 404
+
+## Subindo container Docker
+
+No terminal de um computador que tenha o Docker instalado use o seguinte comando
+
+```sh
+    docker-compose up
+```
+
+Assim irá subir um container que ocupará a porta 3000 TCP para que você faça seus testes
