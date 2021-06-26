@@ -8,11 +8,15 @@ router.get('/ping', (request, response) => {
 });
 
 router.post('/createjob', (request, response) => {
-    const data = manipulateArray(request.body);
+    try {
+        const data = manipulateArray(request.body);
 
-    cronjob(data, request.body);
+        cronjob(data, request.body);
 
-    response.status(200).send(data);
+        response.status(200).send(data);
+    } catch (err) {
+        response.status(500).send({'message': 'Internal Server Error'});
+    }
 });
 
 module.exports = router;
